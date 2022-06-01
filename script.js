@@ -31,7 +31,7 @@ function getImg(data) {
   for(let i = 0; i < data.results.length; i++){
     let image = document.createElement("div");
     image.className = "img";
-    image.style.backgroundImage = "url("+data.results[i].urls.raw+")";
+    image.style.backgroundImage = `url(${data.results[i].urls.raw})`;
     image.addEventListener("dblclick", function(){
       window.open(data.results[i].links.download, '_blank');
     })
